@@ -293,8 +293,6 @@
 
             if (validate()) {
 
-                $("#name").val('');
-
                 var userData = {
                     name: $("#name").val(),
                     image: "assets/images/user.png",
@@ -325,6 +323,7 @@
                 console.log("Please fill in all areas");
                 $("#valModal").modal("show");
             }
+            $("#name").val('');
         })
     </script>
 </body>
